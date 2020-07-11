@@ -108,20 +108,22 @@ h2 {
 	object-position: ;
 	padding: 0;
 	margin: 0;
-	position: relative;
-	bottom: 10px;
+	position: absolute;
+	bottom: -10px;
 }
 
 .form-white {
+	cursor: pointer;
 	width: 300px;
-	height: 40px;
+	height: 60px;
 	border: none;
-	/* background-color: yellow; */
+	background-color: transparent;
+
 	margin-right: 1em;
 	padding: 0;
 	margin: 0;
-	position: relative;
-	top: 15px;
+	position: absolute;
+	bottom: 20px;
 	left: 40px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
