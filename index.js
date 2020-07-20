@@ -1,21 +1,21 @@
-var logo = document.getElementById('bm')
+// var logo = document.getElementById('bm');
 
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById('bm'), // Required
-  renderer: 'svg', // Required
-  loop: false, // Optional
-  autoplay: false, // Optional
-  path: 'data.json' // Required
+// var animation = bodymovin.loadAnimation({
+// 	container: document.getElementById('bm'), // Required
+// 	renderer: 'svg', // Required
+// 	loop: false, // Optional
+// 	autoplay: false, // Optional
+// 	path: 'data.json' // Required
 
-  //   name: 'Hello World' // Name for future reference. Optional.
-})
-logo.addEventListener('mouseover', function () {
-  animation.play()
-})
+// 	//   name: 'Hello World' // Name for future reference. Optional.
+// });
+// logo.addEventListener('mouseover', function() {
+// 	animation.play();
+// });
 
-logo.addEventListener('mouseleave', function () {
-  animation.goToAndStop(0)
-})
+// logo.addEventListener('mouseleave', function() {
+// 	animation.goToAndStop(0);
+// });
 
 // var logo = document.getElementById("logo");
 // var animation = bodymovin.loadAnimation({
