@@ -1,5 +1,5 @@
 var logo = document.getElementById('bm');
-var play = document.getElementById('activate');
+// var play = document.getElementById('activate');
 
 var invalidEmail = document.getElementById('invalid_mail');
 
@@ -33,23 +33,23 @@ logo.addEventListener('mouseover', function() {
 	valid_mail.style.visibility = 'hidden';
 });
 
-play.addEventListener('mouseover', function() {
-	animation.play();
-	mail.style.visibility = 'hidden';
-	stroke.style.visibility = 'hidden';
-	stroke_invalid.style.visibility = 'hidden';
-	invalid_mail.style.visibility = 'hidden';
-	stroke_valid.style.visibility = 'visible';
-	valid_mail.style.visibility = 'visible';
-});
+// play.addEventListener('mouseover', function() {
+// 	animation.play();
+// 	mail.style.visibility = 'hidden';
+// 	stroke.style.visibility = 'hidden';
+// 	stroke_invalid.style.visibility = 'hidden';
+// 	invalid_mail.style.visibility = 'hidden';
+// 	stroke_valid.style.visibility = 'visible';
+// 	valid_mail.style.visibility = 'visible';
+// });
 
 logo.addEventListener('mouseleave', function() {
 	animation.goToAndStop(0);
 });
 
-play.addEventListener('mouseleave', function() {
-	animation.goToAndStop(0);
-});
+// play.addEventListener('mouseleave', function() {
+// 	animation.goToAndStop(0);
+// });
 
 // Lottie Branch Test Change - Test Local changes
 
@@ -89,7 +89,7 @@ function checkEmail(input) {
 	if (re.test(input.value.trim())) {
 		showSuccess(input);
 	} else {
-		showError(input, 'Email is not valid');
+		showError(input);
 	}
 }
 
